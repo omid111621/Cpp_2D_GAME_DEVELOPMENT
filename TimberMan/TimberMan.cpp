@@ -13,7 +13,7 @@ int main()
 
 	/*
 	***************************************************************************************
-									*Working with graphics*
+					*Working with graphics*
 	***************************************************************************************
 		Every graphic we use in our game needs to be loaded in the first place.
 	To illustate, the graphic needs to be loaded from our harddrive to the GPU.
@@ -120,18 +120,18 @@ int main()
 		***************************************
 		*/
 
-		//	Clear everything from the last frame.      //                                                                                          //
+		//	Clear everything from the last frame.  //                                                                                          //
 		window_object.clear();                         //                                                                                          //
-													   //                                                                                          //
-		//	Draw the game's scene here.                //                                                                                          //
+	                                                       //                                                                                          //
+		//	Draw the game's scene here.            //                                                                                          //
 		window_object.draw(backgroundSpriteObject);    //                                                                                          //
 		window_object.draw(treeSpriteObject);	       //Note, however, the order in which we draw the different                                   //
 		window_object.draw(treeSpriteObject);	       //objects to the screen.We must draw all of the graphics after the background, or they      //____________ This process is called DOUBLE BUFFERING
 		window_object.draw(beeSpriteObject);	       //will be covered, and we must draw the clouds before the tree, or they will look a bit     //
-	    window_object.draw(cloudOneSpriteObject);	   //odd drifting in front of the tree.The bee would look OK either in front or behind         //
-		window_object.draw(cloudTwoSpriteObject);	   //the tree.I opted to draw the bee in front of the tree so that it can try and distract our //
-		window_object.draw(cloudThreeSpriteObject);	   //lumberjack, a bit like a real bee might.                                                  //
-		//	Show everything we just drew.              //                                                                                          //
+	    window_object.draw(cloudOneSpriteObject);	       //odd drifting in front of the tree.The bee would look OK either in front or behind         //
+		window_object.draw(cloudTwoSpriteObject);      //the tree.I opted to draw the bee in front of the tree so that it can try and distract our //
+		window_object.draw(cloudThreeSpriteObject);    //lumberjack, a bit like a real bee might.                                                  //
+		//	Show everything we just drew.          //                                                                                          //
 		window_object.display();                       //                                                                                          //
 
 	}
